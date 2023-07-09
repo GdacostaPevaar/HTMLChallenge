@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantilla HTML</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg project-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./Images/logo-blanco.png" class="navbar-logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" id="inicio" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contactacnos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="project-container">
+      <div class="form-container">
+        <div class="image-holder"></div>
+        <form method="post">
+          <h2 class="form-title">Solicita Cotización</h2>
+          <hr class="solid" />
+          <div class="form-group">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input
+              class="form-control"
+              type="text"
+              name="nombre"
+              placeholder="Nombre"
+            />
+          </div>
+          <div class="form-group">
+            <label for="correo" class="form-label">Correo</label>
+            <input
+              class="form-control"
+              type="email"
+              name="correo"
+              placeholder="Correo"
+            />
+          </div>
+          <div class="form-group">
+            <label for="telefono" class="form-label">Teléfono </label>
+            <input
+              class="form-control"
+              type="phone"
+              name="Teléfono"
+              placeholder="Teléfono"
+            />
+          </div>
+          <div class="form-group">
+            <label for="mensaje" class="form-label"
+              >¿Qué le gustaría saber?</label
+            >
+            <textarea class="form-control" id="mensaje" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="slideshow-container">
+        <div class="row g-0">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide col-lg-8 col-md-12"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="d-block w-100"
+                  src="./Images/Slider 1.png"
+                  alt="First slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="./Images/Slider 2.png"
+                  alt="Second slide"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="./Images/Slider 3.png"
+                  alt="Third slide"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+            </button>
+          </div>
+          <div class="apartment-details-container col-lg-4 col-md-12">
+            <div class="apartment-area-details">
+              <h2 class="apartment-area-details-title">85 m2</h2>
+              <p class="apartment-area-details-text">Área construida</p>
+              <h2 class="apartment-area-details-title">75 m2</h2>
+              <p class="apartment-area-details-text">Área privada</p>
+              <button
+                class="blue-button"
+                data-bs-toggle="modal"
+                data-bs-target="#myModal"
+              >
+                Ver Planos
+              </button>
+            </div>
+            <div class="apartment-details">
+              <h5>Este apartamento incluye</h5>
+              <p>Parqueadero privado</p>
+              <p>Zona de ropas independiente</p>
+              <p>Sala Comedor</p>
+              <p>2 alcobas</p>
+              <p>2 baños</p>
+              <p>Vestier en alcoba principal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-container">
+        <div class="map" id="contact">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d591.0716304882651!2d-74.04625860722089!3d4.728303981041499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f8569a0ef5155%3A0x6c2dd6aedb81b967!2sCl.%20146%20%2319-11%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1688735902912!5m2!1ses!2sco"
+          ></iframe>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="myModal"
+        tabindex="-1"
+        aria-labelledby="myModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header custom-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img src="./Images/plano.jpg" class="img-fluid" alt="Planos" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 text-center">
+            <h3 class="footer-title">Nosotros</h3>
+            <ul class="list-unstyled mb-0">
+              <a href="#">
+                <li>Visión</li>
+              </a>
+              <a href="#">
+                <li>Misión</li>
+              </a>
+              <a href="#">
+                <li>Filosofía</li>
+              </a>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 footer-social">
+            <div class="social-header">
+              <h3>Redes sociales</h3>
+            </div>
+            <div class="social-icons">
+              <a href="#">
+                <img
+                  src="./Images/facebook.png"
+                  alt="Facebook"
+                  class="img-fluid"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./Images/twittericon.png"
+                  alt="Twitter"
+                  class="img-fluid"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./Images/instagram.png"
+                  alt="Instagram"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="footer-contact text-center">
+              <h3 class="footer-contact-title">Contáctanos</h3>
+              <p>Calle 146 #19-11</p>
+              <p>301 1234567</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./scripts/scriptsproject.js"></script>
+  </body>
+</html>

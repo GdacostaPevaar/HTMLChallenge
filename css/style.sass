@@ -1,0 +1,225 @@
+.hidden 
+	transform: translateY(-100%) 
+	transition: transform 0.3s 
+	display: none 
+.custom-navbar 
+	top: 0 
+	left: 0 
+	width: 100% 
+	height: 70px 
+	z-index: 999 
+.project-navbar 
+	background-color: rgb(20, 25, 62) 
+.nav-link 
+	color: white 
+	&:hover 
+		color: white 
+.navbar-toggler 
+	border: 0px 
+	color: rgba(0, 0, 0, 0) 
+.navbar-nav 
+	margin-right: 20px 
+.custom-navbar-brand 
+	margin-top: 50px 
+.navbar-logo 
+	width: 70px 
+	height: 70px 
+	margin-left: 20px 
+.hero-image 
+	min-height: 30rem 
+	position: relative 
+	display: table 
+	width: 100% 
+	height: 100vh 
+	background-image: url("../Images/bg.png") 
+	background-position: center center 
+	background-repeat: no-repeat 
+	background-size: cover 
+.container 
+	position: relative 
+.image 
+	position: relative 
+	width: 100% 
+.image__img 
+	display: block 
+	width: 100% 
+.image__overlay 
+	position: absolute 
+	top: 0 
+	left: 0 
+	width: 100% 
+	height: 100% 
+	background: rgba(0, 0, 0, 0.6) 
+	color: #ffffff 
+	font-family: "Quicksand", sans-serif 
+	display: flex 
+	flex-direction: column 
+	align-items: center 
+	justify-content: center 
+	opacity: 0 
+	transition: opacity 0.25s 
+	& > * 
+		transform: translateY(20px) 
+		transition: transform 0.25s 
+	&:hover 
+		opacity: 1 
+		& > * 
+			transform: translateY(0) 
+.image__overlay--blur 
+	backdrop-filter: blur(5px) 
+.image__overlay--primary 
+	background: rgba(0, 0, 0, 0.2) 
+.image__description 
+	font-size: 1.25em 
+	margin-top: 0.25em 
+	background: rgba(0, 0, 0, 0.6) 
+	padding: 16px 22px 
+	color: #ffffff 
+	text-decoration: none 
+	&:hover 
+		color: #ffffff 
+.projects-section 
+	text-align: center 
+	padding: 50px 
+.projects-title 
+	font-weight: bold 
+	margin-bottom: 20px 
+.projects-images 
+	display: flex 
+	justify-content: space-between 
+	margin-bottom: 20px 
+	img 
+		width: 200px 
+		height: 200px 
+.footer 
+	background-color: rgb(20, 25, 62) 
+	padding: 20px 
+	display: flex 
+	justify-content: space-between 
+	align-items: center 
+	font-size: 14px 
+	color: white 
+.footer-menu 
+	display: flex 
+	flex-direction: column 
+.footer-title 
+	font-weight: bold 
+	margin-bottom: 10px 
+.footer-social 
+	display: flex 
+	flex-direction: column 
+	align-items: center 
+.social-header 
+	margin-bottom: 5px 
+.social-icons 
+	display: flex 
+	justify-content: center 
+	margin-bottom: 10px 
+	img 
+		width: 30px 
+		height: 30px 
+		margin-right: 10px 
+	a 
+		&:hover 
+			img 
+				background-color: rgba(255, 255, 255, 0.5) 
+.footer-contact 
+	text-align: right 
+.footer-contact-title 
+	font-weight: bold 
+	margin-bottom: 10px 
+.project-container 
+	padding-top: 0 
+	padding-bottom: 40px 
+	.image-holder 
+		display: table-cell 
+		width: auto 
+		background: url("../Images/op.jpg") 
+		background-size: cover 
+	.form-container 
+		display: table 
+		max-width: 900px 
+		width: 90% 
+		margin: 0 auto 
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1) 
+	form 
+		display: table-cell 
+		width: 400px 
+		background-color: rgb(158, 157, 158) 
+		padding: 20px 20px 
+		color: #000000 
+		h2 
+			font-size: 24px 
+			line-height: 1.5 
+			margin-bottom: 0px 
+			text-align: center 
+		.form-control 
+			margin-bottom: 20px 
+			margin-top: 10px 
+			background-color: rgb(210, 209, 211) 
+		.form-check 
+			font-size: 13px 
+			line-height: 20px 
+.form-label 
+	color: rgb(78, 76, 88) 
+	margin-bottom: 0px 
+.btn-submit 
+	background-color: black 
+	color: white 
+	width: 100% 
+	&:hover 
+		background-color: black 
+		color: white 
+		width: 100% 
+.slideshow-container 
+	max-width: 900px 
+	width: 90% 
+	margin: 0 auto 
+.apartment-details-container 
+	background-color: rgb(20, 25, 63) 
+	color: #ffffff 
+	padding: 1rem 
+.apartment-area-details-title 
+	font-size: 24px 
+	font-weight: bold 
+	margin-top: 0 
+.apartment-area-details 
+	text-align: center 
+.apartment-area-details-text 
+	margin-bottom: 0 
+.blue-button 
+	background-color: rgb(20, 25, 63) 
+	color: #ffffff 
+	border: 2px solid #ffffff 
+	padding: 0.5rem 1rem 
+	margin-top: 20px 
+	font-weight: bold 
+	cursor: pointer 
+.apartment-details 
+	margin-top: 10px 
+	text-align: left 
+	h3 
+		font-size: 24px 
+	p 
+		margin: 0 
+.custom-header 
+	border: none 
+.modal-body 
+	img 
+		padding-left: 20px 
+		padding-right: 20px 
+.map-container 
+	max-width: 900px 
+	width: 90% 
+	margin: 0 auto 
+.map 
+	height: 30rem 
+	iframe 
+		height: 100% 
+		width: 100% 
+		border: 0 
+a 
+	color: white 
+	text-decoration: none 
+	:hover 
+		color: white 
